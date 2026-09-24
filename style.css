@@ -115,3 +115,11 @@ body{
 		transform: scale(.7);
 	}
 }
+
+/* reduced motion: keep a slow turn so it still reads as "loading", without the fast spin */
+@media (prefers-reduced-motion: reduce){
+	.tomoes{
+		animation-duration: 8s;
+		animation-timing-function: linear;
+	}
+}

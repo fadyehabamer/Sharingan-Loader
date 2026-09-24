@@ -103,3 +103,15 @@ body{
 		transform: rotate(360deg);
 	}
 }
+
+/* the eye is a fixed 400px (+ border); scale it down on narrow phones so it isn't clipped */
+@media (max-width: 440px){
+	.sharingan{
+		transform: scale(.8);
+	}
+}
+@media (max-width: 360px){
+	.sharingan{
+		transform: scale(.7);
+	}
+}

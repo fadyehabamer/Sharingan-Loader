@@ -103,3 +103,23 @@ body{
 		transform: rotate(360deg);
 	}
 }
+
+/* the eye is a fixed 400px (+ border); scale it down on narrow phones so it isn't clipped */
+@media (max-width: 440px){
+	.sharingan{
+		transform: scale(.8);
+	}
+}
+@media (max-width: 360px){
+	.sharingan{
+		transform: scale(.7);
+	}
+}
+
+/* reduced motion: keep a slow turn so it still reads as "loading", without the fast spin */
+@media (prefers-reduced-motion: reduce){
+	.tomoes{
+		animation-duration: 8s;
+		animation-timing-function: linear;
+	}
+}
